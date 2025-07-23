@@ -1,0 +1,18 @@
+INSERT INTO users (EMAIL, FIRST_NAME, LAST_NAME, PASSWORD) VALUES ('alice@example.com', 'Alice', 'Johnson', 'alice123');
+INSERT INTO users (EMAIL, FIRST_NAME, LAST_NAME, PASSWORD) VALUES ('bob@example.com', 'Bob', 'Smith', 'bob456');
+INSERT INTO users (EMAIL, FIRST_NAME, LAST_NAME, PASSWORD) VALUES ('charlie@example.com', 'Charlie', 'Brown', 'charlie789');
+INSERT INTO users (EMAIL, FIRST_NAME, LAST_NAME, PASSWORD) VALUES ('alon@example.com', 'Alon', 'Vainberg', '12345');
+INSERT INTO users (EMAIL, FIRST_NAME, LAST_NAME, PASSWORD) VALUES ('bob11@example.com', 'Bob', 'Smith', '$2a$10$pja60Uy./hlydqGniEQEVOfTtgZPEBhthDFixJkvussWuVai3tq2q');
+INSERT INTO tasks (ACCOMPLISHED_AT, BODY, CREATED_AT, STATUS, TITLE, ACCOMPLISHED_BY_ID, OWNER_ID) VALUES ('2025-07-22 14:42:35.349407', 'Develop the backend API using Spring Boot', '2025-07-01 10:00:00.0', 'DONE', 'Build API', '2', '1');
+INSERT INTO tasks (ACCOMPLISHED_AT, BODY, CREATED_AT, STATUS, TITLE, ACCOMPLISHED_BY_ID, OWNER_ID) VALUES ('2025-07-22 16:47:12.081509', 'Create a responsive UI layout', '2025-07-10 09:30:00.0', 'DONE', 'Design UI', '3', '2');
+INSERT INTO tasks (ACCOMPLISHED_AT, BODY, CREATED_AT, STATUS, TITLE, ACCOMPLISHED_BY_ID, OWNER_ID) VALUES ('2025-07-13 17:00:00.0', 'Resolve critical issues found during testing', '2025-07-12 14:00:00.0', 'DONE', 'Fix Bugs', '1', '3');
+INSERT INTO tasks (ACCOMPLISHED_AT, BODY, CREATED_AT, STATUS, TITLE, ACCOMPLISHED_BY_ID, OWNER_ID) VALUES (NULL, 'Document all the REST endpoints', '2025-07-05 12:00:00.0', 'TODO', 'Write Docs', NULL, '4');
+INSERT INTO tasks (ACCOMPLISHED_AT, BODY, CREATED_AT, STATUS, TITLE, ACCOMPLISHED_BY_ID, OWNER_ID) VALUES ('2025-07-21 13:59:06.644062', 'This is the body of the task.', '2025-07-21 13:16:36.60184', 'DONE', 'New Task Title', '2', '1');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('4', '1');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('1', '2');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('3', '1');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('1', '3');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('3', '2');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('2', '1');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('2', '4');
+INSERT INTO users_tasks (USER_ID, TASK_ID) VALUES ('2', '5');
